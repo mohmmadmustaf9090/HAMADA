@@ -1,0 +1,224 @@
+*{
+    margin: 0;padding: 0;font-family: sans-serif;
+}
+body{
+    direction: rtl;   
+}
+.container{
+    width: 90%;margin: auto;
+}
+header{
+    height: 60px;line-height: 60px;background: #555;
+  
+}
+header .logo{
+    float: right;
+}
+header .logo h2{
+    color: #fff;
+}
+header .logo h2 a{
+    color: white;
+    text-decoration: none;
+}
+header .logo h2 a:hover{
+    color: red;
+}
+header nav{
+    float: left;
+}
+header nav ul{
+    list-style: none; 
+}
+header nav ul li{
+    display: inline-block;
+    padding-left: 15px;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+header .input:hover{
+    background-color: red;
+    color: white;
+}
+span{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: none
+    cursor:pointer;
+}
+.con{
+    margin: 5px;
+    margin-right: 450px;
+    background-position: center;
+    background-attachment: scroll;
+}
+/*sidenav*/
+#sidenav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #555;
+    width: 0;
+    height: 100%;
+    text-align: center;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 1;
+}
+#sidenav li{
+    display:block;
+    padding-bottom: 20px;
+}
+#sidenav li a{
+    color: #fff;
+    text-decoration: none;
+}
+#sidenav li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+a#close{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+}
+/*start home*/
+#home{
+    background-image: url(%D8%A7%D9%84%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width:100%;height:60%;
+    
+}
+#home .overlay{
+   position: absolute;
+   top: 100px;left: 0;
+   width: 100%;height: 100%;
+   
+}
+#home .overlay .home-text{
+    text-align: center;
+    padding-top: 100px;
+}
+#home .overlay .home-text h2{
+    color: white;padding-bottom: 10px;
+}
+#home .overlay .home-text p{
+    color: white;padding-bottom: 10px;line-height: 30px;font-size: 20px;font-family:fantasy;
+}
+#home .overlay .home-text button{
+    border: 1px white solid;
+    padding: 10px;
+    width: 140px;
+    background: transparent;
+    font-size: 20px;
+    font-family: monospace;
+   color: white;
+}
+#home .overlay .home-text button:hover{
+    color: red;
+    text-decoration: none;
+    background-color: black;
+}
+#about{
+    padding:60px 0;
+    text-align: center;
+    width: 100%;
+}
+#about h2{
+    margin-bottom: 20px;
+}
+#about p{
+    line-height: 30px;
+    color: black;
+    font-size: 20px;
+}
+/*
+start products
+*/
+#products{
+    padding: 60px 0 100px 0;
+    text-align: center;
+    width: 100%;
+}
+#products h2{
+    margin-bottom: 50px;
+}
+.single-product{
+    position: relative;
+    width: 20%;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #EAEAEA;
+}
+.single-product img{
+    width: 100% ;
+    padding: 10px;
+    transform: scale(0);
+    transition: 0.5s;
+    
+}
+.single-product:hover img{
+    transform: scale(1);
+}
+.single-product p{
+    width: 100%;
+    height: 30px;
+    background-color:burlywood;
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+@media(max-width:767px){
+    span{
+        display: block;
+    }
+    header nav{
+        display:none;
+    }
+}
+@media(max-width:767px)and(max-width:991px){
+    products.single-product{
+        position: relative;
+        width: 40%;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+}
+#services{
+    padding: 60px 0;
+    text-align: center;
+}
+#services p{
+    margin-bottom: 40px;
+}
+#services.single-service{
+    width: 30%;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+}
+#call{
+    padding: 60px 0;
+    text-align: center;
+}
+#call.call-me{
+    margin-bottom: 40px;
+   
+}

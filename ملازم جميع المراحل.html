@@ -1,0 +1,104 @@
+<!DOC TYPE HTML>
+<html lang="ar-us">
+<head>
+<title>ملازم جميع المراحل</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="container">
+  <div class="logo">
+    <h2><a href="#">نحن الافضل</a></h2>
+    </div>
+    <nav>
+    <ul>
+    <li><a href="#">الرئيسية</a></li>  
+    <li><a href="#">من نحن</a></li>    
+    <li><a href="#">ملازم</a></li> 
+    <li><a href="#">تقارير جامعة جاهزة</a></li> 
+    <li><a href="#">اتصل بنا</a></li> 
+    </ul>
+    </nav>
+    <!--<responsive menu>-->
+    <span id="open">&#9776;</span>
+    <ul id="sidenav">
+    <li><a href="#" id="close">&times;</a></li>
+    <li><a href="#">الرئيسية</a></li>  
+    <li><a href="#">من نحن</a></li>
+    <li><a href="#">ملازم</a></li>    
+    <li><a href="#">تقارير جامعة جاهزة</a></li> 
+    <li><a href="#">اتصل بنا</a></li> 
+    </ul>
+</div>
+<div>
+<form method="post" action="#">
+ <input type="text" placeholder="البريد الالكتروني">
+ <input type="password" placeholder="الرمز السري"> 
+ <input class="input" type="button" value="دخول">
+</form>
+</div>
+</header>
+<!--
+<start home>
+-->
+<div id="home">
+<div class="overlay">
+<div class="container">
+<div class="home-text">
+<h2>الغرض والفائدة من الموقع</h2>
+<p>لنشر جميع الملازم المراحل الدراسية بسبب الضروف التي يمر بها البلد المادية وغيرها</p>
+<p>نسئل الله التوفيق</p>
+<button>اهلاّ وسهلاّ</button>
+</div>   
+</div>    
+</div> 
+</div>
+<!--
+ end home
+-->
+<!--
+start about
+-->
+<div id="about">
+<div class="contaniner">
+ <h2>فكرة الموقع هي لفائدة اكبر للطلابنا الاعزاء و التشجيع والتحفيز للوصول الى اعلى مستوى</h2>
+ <p>فكرة الموقع تعتمد على نشر الملازم و الكتب الي تفيد طلابنا وتم تتطوير موقع بأكثر من قسم واكثر من مجال </p> 
+</div>      
+</div>
+<!--
+start products
+-->
+<div id="products">
+ <div class="single-product">
+<img src="logo-books.png">
+<p>المكتبة الكتب</p>
+</div>
+<div class="single-products">
+<img src="%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%A1%D8%A9%20%D8%AD%D9%8A%D8%A7%D8%A9.jpg">
+<p>االقراءة حياة</p>
+</div>
+<div class="single-products">
+<img src="%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%A1%D8%A9%20%D9%84%D9%84%D8%AC%D9%85%D9%8A%D8%B9.jpg">
+<p>القراءة للجميع</p>
+</div>
+<div class="single-products">
+<img src="%D9%85%D9%83%D8%AA%D8%A8%D8%A7%D8%AA.png">
+<p>المكتباتي</p>
+</div>
+</div>
+<script type="text/javascript">
+var myopen=document.getElementById('open');
+var myclose=document.getElementById('close');  
+var mysidenav=document.getElementById('sidenav'); 
+myopen.addEventListener('click',opensidenav);
+function opensidenav(){
+     mysidenav.style.width='300px';
+}
+myclose.addEventListener('click',closesidenav);
+function closesidenav(){
+mysidenav.style.width='0';   
+}
+</script>
+</body>
+</html>
